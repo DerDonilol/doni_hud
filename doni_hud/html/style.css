@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    --color-main: #cfcfcf;
+    --shadow-main: 0 0 0px #d1d1d1, 0 0 4px #969696;
+
+
+    --server-color-shadow: 0 0 5px var(--main-color), 0 0 20px var(--main-color);
+
+    --border: 10px;
+
+    --color-white: #fff;
+    --shadow-white: 0 0 5px #FFFFFF, 0 0 20px #FFFFFF;
+
+    --color-red: #ff0000;
+    --shadow-red: 0 0 0px #ff0000, 0 0 4px #ff0000;
+    
+    --color-green: #00bf00;
+    --shadow-green: 0 0 0px #00bf00, 0 0 4px #00bf00;
+    
+    --color-blue: #00C2FF;
+    --shadow-blue: 0 0 5px #00C2FF, 0 0 20px #00C2FF;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.walletAmount {
+    position: absolute;
+    right: 71%;
+    top: 83%;
+    padding: 15px 0px;
+    color: var(--color-green);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: var(--shadow-green);
+    width: 250px;
+    text-align: left; 
+    direction: ltr; 
+}
+
+.bankAmount {
+    position: absolute;
+    right: 71%;
+    top: 86%;
+    padding: 15px 0px;
+    color: var(--color-main);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: var(--shadow-main);
+    width: 250px;
+    text-align: left; 
+    direction: ltr; 
+}
+
+#blackMoneyDisplay {
+    position: absolute;
+    right: 71%;
+    top: 89%;
+    padding: 15px 0px;
+    color: var(--color-red);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: var(--shadow-red);
+    width: 250px;
+    text-align: left; 
+    direction: ltr; 
+}
+
+.jobDisplay {
+    position: absolute;
+    right: 1%;
+    top: 11%;
+    color: var(--color-main);
+    height: auto;
+    width: auto;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: var(--shadow-main);
+    white-space: nowrap;
+}
+
+.spieler-id-container {
+    position: absolute;
+    right: 6.5%;
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spieler, .ID {
+    text-align: center;
+    margin: 0;
+}
+
+.spieler span, .ID .your-id span {
+    color: var(--color-white);
+    text-shadow: var(--shadow-white);
+    font-weight: 600;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.background {
+    position: absolute;
+    height: 1080px;
+    width: 1920px;
+}
+
+.logoalda {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 1%;
+    top: 1%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+#hudContainer {
+    position: absolute;
+    top: 39%;
+    right: 1%;
+    padding: 10px;
+}
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#hud {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+#speedometer {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.outer-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.speed-circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.background {
+    fill: none;
+    stroke: #333;
+    stroke-width: 5;
+    opacity: 0.9;
+}
+
+.progress {
+    fill: none;
+    
+    /* MAIN COLOR */
+    stroke: #9e9e9e;
+
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.speed-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.speed-text .unit {
+    font-size: 25px;
+    font-weight: 600;
+    color: #848385;
+}
+
+.icons {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none !important;
+}

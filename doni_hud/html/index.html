@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a6c44b414d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <title>Doni AUF DIE 1!</title>
+</head>
+
+<body>
+  <!--img class="background" src="bg.png" alt="background"-->
+
+  
+  <img class="logoalda" src="logo.png" alt="Logo" />
+
+  <div class="container" id="container">
+    <div class="walletAmount">Cash: $<span id="walletAmount">200.000.000</span></div>
+    <div class="bankAmount">Bank: $<span id="bankAmount">200.000.000</span></div>
+    <div class="blackMoneyDisplay"><span id="blackMoneyDisplay">Black Money: $200.000.000</span></div>
+    <div class="jobDisplay"><span id="jobInfo">Police Department - Officer</span></div>
+
+    <div class="spieler-id-container">
+      <div class="spieler">
+        <img src="player-icon.png" class="icon" alt="Spieler Icon" />
+        <span id="playerCount">2</span>
+      </div>
+      <div class="ID">
+        <img src="id-icon.png" class="icon" alt="ID Icon" />
+        <div class="your-id"><span id="playerId">1</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="speedometer" class="hidden">
+    <div class="outer-circle">
+      <svg viewBox="0 0 100 100" class="speed-circle">
+        <circle cx="50" cy="50" r="45" class="background" />
+        <circle cx="50" cy="50" r="45" class="progress" id="speedProgress" />
+      </svg>
+      <div class="speed-text">
+        <span id="speed">0</span><span class="unit"> km/h</span>
+      </div>
+      <div class="icons">
+        <span id="fuel"><i class="fas fa-gas-pump"></i> <span id="fuelVal">100</span>L</span>
+        <span id="engine"><i class="fas fa-cogs"></i></span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
